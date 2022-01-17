@@ -1,0 +1,191 @@
+.navbar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.336);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 10;
+}
+.image-editor-warapper {
+  width: 100%;
+  height: 700px;
+  box-shadow: 0 0 11px #00000042;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tools,
+.styleBar,
+.canvasScreen {
+  height: 99%;
+  width: 15%;
+  background: rgba(255, 255, 255, 0.336);
+}
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-top: 5px;
+}
+.toolItem {
+  width: 47%;
+  height: 70px;
+  margin: 1px;
+  background: rgba(255, 255, 255, 0.349);
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toolItem:hover {
+  background: rgba(255, 255, 255, 0.219);
+}
+.canvasScreen {
+  width: 64%;
+  background: rgb(40 40 40 / 71%);
+  box-shadow: 0 0 11px #00000042;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+.cParent {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageUpload {
+  width: 50%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.158);
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.dragArea {
+  transition: 0.3s;
+}
+.dragArea.active {
+  background: rgba(160, 160, 160, 0.288);
+  border-style: dashed;
+}
+
+/* Editing Section */
+.styleBar {
+  width: 20%;
+  padding-bottom: 50px;
+  position: relative;
+}
+.adjust {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+.editingSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 13px;
+}
+.editingHeading {
+  font-weight: 600;
+  text-align: center;
+  font-size: 22px;
+  padding: 16px 0;
+}
+.adjustItem {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 8px 0;
+}
+.adjustHdng {
+  font-size: 15px;
+  padding: 6px 0px;
+  display: flex;
+  width: 100%;
+  font-weight: 600;
+  justify-content: space-between;
+}
+.adjust .buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.textInput {
+  position: absolute;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  border: solid 3px;
+  padding: 9px 0;
+  border-style: dashed;
+  border-color: white !important;
+  border-width: 3px !important;
+  cursor: move;
+  box-sizing: content-box !important;
+}
+
+/* SideBar Text Settings */
+.textSettings {
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+}
+.textHdng {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.styleItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 0;
+  margin: 5px 0;
+  font-size: 17px;
+}
+.styleItem .option,
+.styleItem .value {
+  width: 50%;
+}
+.styleItem input {
+  width: 55px;
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+.styleItem input[type="color"] {
+  width: 28px !important;
+  cursor: pointer;
+  background: #00acd3;
+}
+.dltButton {
+  margin-top: 50px;
+}
+.dltButton button {
+  background: rgb(213 59 0);
+}
